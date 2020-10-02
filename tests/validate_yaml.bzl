@@ -9,6 +9,8 @@ def _assert_equal(one, two):
     if one != two:
         _fial("%s is not %s" % (one, two))
 
+assert_equal = _assert_equal
+
 def _check_inner_inner_block(yaml):
     # print(yaml)
     _assert_equal(yaml["some_key"], "some_value")

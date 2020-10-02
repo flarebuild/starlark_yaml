@@ -1,6 +1,8 @@
-load("//:tests/tests.bzl", "test_repo_yaml")
+workspace(name = "com_flarebuild_starlark_yaml")
 
-test_repo_yaml(
+load("//:yaml_file.bzl", "yaml_file")
+
+yaml_file(
     name = "test_repo_yaml",
-    yaml_file = "//:tests/test_content.yaml",
+    src = "//:tests/test_content.yaml",
 )

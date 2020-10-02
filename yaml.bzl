@@ -124,11 +124,6 @@ def _process_line_def(cur_state, line_def):
             cur_state["cur_advance_key"] = cur[ len(cur) - 1 ]
         else:
             cur_state["cur_advance_key"] = None
-    
-
-    # print("######")
-    # print(cur_state)
-    # print(line_def)
 
 def _backward(prev_state, prev_states, count):
     if not count:

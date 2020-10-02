@@ -1,0 +1,7 @@
+load("//:tests/tests.bzl", "test_yaml")
+load("//:tests/test_content.bzl", "TEST_CONTENT")
+
+test_yaml(
+    name = "test_yaml",
+    content = TEST_CONTENT,
+)
